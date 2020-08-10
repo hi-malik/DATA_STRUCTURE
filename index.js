@@ -194,6 +194,7 @@ myHashTable.set('apple', 9)
 myHashTable.get('apple')
 */
 
+/*
 //GoogleInterviewQuestion
 
 //Google Question
@@ -233,4 +234,55 @@ function firstRecursionCharacter2(input){
   //O(n) space complexity but time complexity is very fast
 }
 firstRecursionCharacter2([2,5,1,2,3,5,1,2,4])
+*/
 
+//LINKED_LISTS
+
+
+//My_First_Linked_List
+
+/*
+
+class LinkedList{
+  constructor(value){
+    this.head = {
+      value: value,
+      next: null,
+    }
+
+    this.tail = this.head;
+    this.length = 1;
+  }
+   append(value){
+     const newNode = {
+       value: value,
+       next: null
+     }
+     this.tail.next = newNode;
+     this.tail = newNode;
+     this.length++;
+
+     return this;
+
+   }
+
+   prepend(value){
+     const newNode = {
+       value: value,
+       next: null
+     }
+     newNode.next = this.head;
+     this.head = newNode;
+     this.length++;
+
+     return this;
+   }
+}
+
+const myLinkedList = new LinkedList(10);
+myLinkedList.append(5);
+myLinkedList.append(16);
+myLinkedList.prepend(1);
+console.log(myLinkedList)
+
+*/
